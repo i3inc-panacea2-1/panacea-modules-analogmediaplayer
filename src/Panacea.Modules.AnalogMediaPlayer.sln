@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panacea.Modules.AnalogMediaPlayer", "Panacea.Modules.AnalogMediaPlayer\Panacea.Modules.AnalogMediaPlayer.csproj", "{8DE74A25-AA35-4DEC-A699-510C6F166B61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DE74A25-AA35-4DEC-A699-510C6F166B61}.Debug|x86.ActiveCfg = Debug|x86
+		{8DE74A25-AA35-4DEC-A699-510C6F166B61}.Debug|x86.Build.0 = Debug|x86
+		{8DE74A25-AA35-4DEC-A699-510C6F166B61}.Release|x86.ActiveCfg = Release|x86
+		{8DE74A25-AA35-4DEC-A699-510C6F166B61}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D86558B-3F66-4C15-9111-9833159DFA44}
+	EndGlobalSection
+EndGlobal
