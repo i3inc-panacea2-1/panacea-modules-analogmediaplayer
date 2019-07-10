@@ -51,6 +51,8 @@ namespace Panacea.Modules.AnalogMediaPlayer
             }
         }
 
+        public event EventHandler<bool> IsPausableChanged;
+
         Task IPlugin.BeginInit()
         {
             return Task.CompletedTask;
@@ -288,7 +290,6 @@ namespace Panacea.Modules.AnalogMediaPlayer
         public event EventHandler<bool> IsSeekableChanged;
         public event EventHandler<bool> HasNextChanged;
         public event EventHandler<bool> HasPreviousChanged;
-        public event EventHandler IsPausableChanged;
 
         public event EventHandler Stopped;
         protected void OnStopped()
