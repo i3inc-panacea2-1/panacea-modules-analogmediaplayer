@@ -18,7 +18,7 @@ namespace Panacea.Modules.AnalogMediaPlayer
     /// <summary>
     /// Interaction logic for VisioForgeMediaPlayerWPF.xaml
     /// </summary>
-    public partial class VisioForgeMediaPlayer : UserControl, IMediaPlayerPlugin
+    public partial class VisioForgeMediaPlayer : UserControl, IMediaPlayerPlugin, IMediaPlayer
     {
         private List<Type> _supportedTypes = new List<Type>() { typeof(AnalogMedia) };
         private VideoCapture visioforgePlayer;
@@ -86,12 +86,12 @@ namespace Panacea.Modules.AnalogMediaPlayer
             get { return false; }
         }
 
-        public bool CanPlayChannel(object item)
+        public bool CanPlayChannel(MediaItem item)
         {
             return item is AnalogMedia;
         }
 
-        public async void Play(MediaItem channel)
+        public async Task Play(MediaItem channel)
         {
             try
             {
@@ -359,6 +359,8 @@ namespace Panacea.Modules.AnalogMediaPlayer
         {
             Ended?.Invoke(this, null);
         }
+
+        public IMediaPlayer GetMediaPlayer() => this;
     }
 }
 
